@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./../images/favicon.png" />
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./../css/main.css">
+    <link rel="stylesheet" href="./../css/profile.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light _roboto_B">
+        <div class="container-fluid">
+                <a class="navbar-brand" href="#">Tech Nand</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./myevents.html"> My Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./createevent.html"> Create Event</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button type="button" class="btn btn-primary">Log Out</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="_border_box">
+            <div class="_sign_up_main">
+                <div class="_profile_container">
+                    <div class="avatar-upload">
+                        <div class="avatar-edit">
+                            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                            <label for="imageUpload"></label>
+                        </div>
+                        <div class="avatar-preview">
+                            <div id="imagePreview" style="background-image: url(./../images/profile-image.jpg.crdownload);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label font_F_Roboto_R">First Name</label>
+                    <input type="text" value="Cetification Ceremony"  class="form-control font_F_Roboto_R" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label font_F_Roboto_R">Last Name</label>
+                    <input type="text" class="form-control font_F_Roboto_R" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label font_F_Roboto_R">Mobile Number</label>
+                    <input type="number" class="form-control font_F_Roboto_R" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label font_F_Roboto_R">Email Address</label>
+                    <input type="email" disabled value="info@iskillers.com" class="form-control font_F_Roboto_R" id="exampleFormControlInput1">
+                </div>
+
+             
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label font_F_Roboto_R">Select Gender</label>
+                    <div class="_radio_main">
+                        <div class="form-check">
+                            <input class="form-check-input font_F_Roboto_R" type="radio"checked name="flexRadioDefault"
+                                id="flexRadioDefault1">
+                            <label class="form-check-label font_F_Roboto_R" for="flexRadioDefault1">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check" style="margin-left: 10px;">
+                            <input class="form-check-input font_F_Roboto_R" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault2" >
+                            <label class="form-check-label font_F_Roboto_R" for="flexRadioDefault2">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label font_F_Roboto_R">Comments</label>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                      </div>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary font_F_Roboto_B" type="button">Update Profile</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
